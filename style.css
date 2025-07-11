@@ -29,7 +29,6 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-/* 🌞 Light mode styles */
 body.light {
     --bg: #f8f8ff;
     --fg: #222;
@@ -243,6 +242,7 @@ body.light .pronoun-wrapper {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    align-items: flex-start;
     margin-top: 2rem;
     padding: 1rem;
     border: 3px double var(--accent);
@@ -254,11 +254,18 @@ body.light .pronoun-wrapper {
 .blinkies-container img {
     width: 120px;
     height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    height: auto
+    width: auto;        
     border-radius: 8px;
     box-shadow: 0 0 4px var(--accent);
     transition: transform 0.2s ease;
     image-rendering: pixelated;
     animation: pulse-glow 3s ease-in-out infinite;
+}
+
+    object-fit: contain;
 }
 
 @keyframes pulse-glow {
