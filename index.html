@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8" />
+	<title>Close this website, txEn eht nepO.</title>
+	<link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+	<div class="buttons">
+            <button onclick="toggleTheme()">☀ Theme</button>
+            <button onclick="toggleWobble()">≋ Wobbly Mode</button>
+            <button id="toggleAnimBtn" onclick="toggleAnimations()">⚙ Animations ON</button>
+	</div>
+
+	<div class="container">
+            <h1 class="shiny-text">coast</h1>
+
+            <i><p><b>warning:</b> this website contains javascript! if you have js disabled, buttons will not work!</p><br></i>
+
+            <div class="pronoun-wrapper">
+		<p>I use a bunch of <em>pronouns</em> and you're allowed to use <a href="https://en.pronouns.page/u/coasteen">any of them</a> <em>:3</em></p>
+            </div>
+
+            <div class="about">
+		<br />
+		<p>I like fucking around</p>
+		<p>I love *NIX, tech, software, et cetera.</p>
+		<p>I use Gentoo!</p>
+            </div>
+
+            <div class="links">
+		<p><a href="https://codeberg.org/coast/" class="shiny-text">Visit my codeberg</a></p>
+		<br />
+		<h4>Things I've made</h4>
+		<ul>
+                    <li><a href="https://codeberg.org/coast/doas-rs">doas-rs</a></li>
+                    <li><a href="https://codeberg.org/coast/cfstabgen">cfstabgen</a></li>
+                    <li><a href="https://codeberg.org/coast/coverlay">coverlay</a></li>
+		</ul>
+            </div>
+
+            <br />
+            <h4>Blinkies</h4>
+            <div class="blinkies-container">
+		<img src="img/blueos_button.gif" alt="blueos button" />
+		<img src="img/chrmevil.gif" alt="chrmevil" />
+		<img src="img/discord-no-way-2.gif" alt="discord no way 2" />
+		<img src="img/fuck-google.gif" alt="fuck google" />
+		<img src="img/fuck_facebook.gif" alt="fuck facebook" />
+		<img src="img/gaywebring.gif" alt="gay webring" />
+		<img src="img/graphics_by_gimp.gif" alt="graphics by gimp" />
+		<img src="img/iecrash.gif" alt="ie crash" />
+		<img src="img/ihatems.gif" alt="ihatems" />
+		<img src="img/nosleep.png" alt="nosleep" />
+		<img src="img/openbsd.png" alt="openbsd" />
+		<img src="img/roly-saynotoweb3.gif" alt="roly saynotoweb3" />
+		<img src="img/seedyourtorrents.gif" alt="seed your torrents" />
+		<img src="img/stop_microsoft.gif" alt="stop microsoft" />
+		<img src="img/tyg.gif" alt="tyg" />
+		<img src="img/win10no.gif" alt="win10 no" />
+		<img src="img/tranarchy.gif" alt="tranarchy">
+            </div>
+	</div>
+
+	<script>
+         let animEnabled = true;
+         function toggleTheme() {
+             document.body.classList.toggle("light");
+         }
+         function toggleWobble() {
+             document.body.classList.toggle("wobbly");
+         }
+         function toggleAnimations() {
+             animEnabled = !animEnabled;
+             document.body.classList.toggle('no-anim', !animEnabled);
+             document.getElementById('toggleAnimBtn').textContent = animEnabled ? '⚙ Animations ON' : '⚙ Animations OFF';
+         }
+	</script>
+    </body>
+</html>
